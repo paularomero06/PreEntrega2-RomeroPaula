@@ -1,0 +1,312 @@
+/*Estilo reset*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    max-width: 1900px;
+}
+
+/*Estilo Header/Nav*/
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: bisque;
+
+}
+
+.logo-header {
+    width: 60px;
+    height: 60px;
+
+}
+
+#navBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navBar__Logo {
+    display: flex;
+    align-items: center;
+
+}
+
+#navBar__Logo p {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navBar-ul {
+    text-align: right;
+
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+/*BODY-MAIN*/
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+#main {
+    min-height: 100vh;
+    max-width: 1400px;
+}
+
+
+/* sections index*/
+.contenido-1 {
+    text-align: center;
+}
+
+.contenido-1_h1,
+.contenido-1_h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.img_box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.peruano {
+    max-width: 400px;
+    max-height: 400px;
+    align-items: center;
+}
+
+.peruano,
+.contenido-1_p {
+    max-width: 1200px;
+    padding: 30px;
+}
+
+.contenido-1_p {
+    padding: 20px;
+}
+
+.contenido-2 {
+    text-align: center;
+    padding: 30px;
+    max-width: 1400px;
+}
+
+.contenido-2_h2,
+.contenido-2_p {
+    align-items: center;
+    max-width: 1400px;
+    padding-bottom: 30px;
+}
+
+
+/*PAGE INVIERNO*/
+
+.hebras__h1 {
+    text-align: center;
+    background-color: rgb(233, 170, 241);
+}
+
+.container text-center {
+    display: flex;
+}
+
+.acrilicos__h2,
+.merino__h2,
+.shetland__h2,
+.fantasias__h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+/*page primavera*/
+.algodonRustico__h2,
+.peruano__h2,
+.fantasias__verano--h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.hebrasVerano__h1 {
+    text-align: center;
+    background-color: rgb(166, 238, 214);
+}
+
+.algodonRustico__h2,
+.peruano__h2,
+.ovillos__h2,
+.fantasias__verano--h2 {
+    text-align: center;
+    margin: 20 px;
+}
+
+/*page ACCESORIOS*/
+.accesorios__h1 {
+    text-align: center;
+    background-color: rgb(195, 143, 245);
+}
+
+.crochet__h2,
+.tricot__h2,
+.circulares__h2,
+.accesorios__h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+
+/*Estilos CONTACTO*/
+
+#mainContacto {
+    min-height: 100vh;
+    max-width: 1920px
+}
+
+.grid__container--2 {
+    display: grid;
+    grid-template-areas:
+        "form  clase"
+        "clase2 clase3"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 30px;
+}
+
+#clase {
+    grid-area: clase;
+}
+
+#form {
+    grid-area: form;
+    height: 100%;
+}
+
+.contactForm {
+    width: 80%;
+    align-content: center;
+}
+
+
+.h1__contact--1 {
+    text-align: center;
+    background-color: rgb(206, 241, 117);
+    padding: 20px;
+}
+
+
+
+
+/*Estilos FOOTER*/
+#footer {
+    width: 100%;
+    height: 80px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font: size 15px;
+    
+}
+
+.footer-redes i {
+    font-size: 25px;
+    margin-left: 5px;
+    padding: 5px;
+    color: black;
+}
+
+
+/*Breakpoints
+
+mobile: 600px
+tablet:800px
+desktop: 1200px
+XXL: 1920*/
+/*Paginas Responsivas de Actividad Index */
+@media (max-width:860px) {
+    .img_box {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
+/*No entiendo porqué siendo #main el padre no me modificó a ambas classes de contenido, pero cuando hice el llamado a .contenido-2 tambien se me modificó el .contenido-1.   
+Llegué al objetivo que yo queria pero no se si es adecuado el modo jaja*/
+
+@media (min-width:1440px) and (max-width:1920px) and (orientation:landscape) {
+
+    #main,
+    .contenido-2,
+    .contenido-2_h2,
+    .contenido-2_p {
+        max-width: 100%;
+    }
+}
+
+/*Paginas Responsivas de Actividad CONTACTO */
+
+@media  (max-width:760px) {
+    .grid__container--2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .clase__p--1 , .clase__p--2 , .clase__p--3{
+        text-align: left;
+        width: 60%;
+    }
+
+    .card-img-top{
+        padding: 10px;
+    }
+
+    .form {
+        width: 80%;
+        justify-content: center;
+        margin: 30px;
+    }
+}
+
+/* No me salio bien hacerlo responsivo con grid-template-area, lo estoy practicando aun. 
+
+@media (min-width:400px) and (max-width:760px) {
+    .grid__container--2 {
+        grid-template-areas:
+            "form form"
+            "clase clase"
+            "clase2 clase2"
+            "clase3 clase3";
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows:100px 1fr 1fr 1fr;
+    }
+}*/
