@@ -1,0 +1,46 @@
+/* sections index*/
+.contenido-1 {
+    text-align: center;
+}
+
+.contenido-1_h1,
+.contenido-1_h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.img_box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.peruano {
+    max-width: 400px;
+    max-height: 400px;
+    align-items: center;
+}
+
+.peruano,
+.contenido-1_p {
+    max-width: 1200px;
+    padding: 30px;
+}
+
+.contenido-1_p {
+    padding: 20px;
+}
+
+.contenido-2 {
+    text-align: center;
+    padding: 30px;
+    max-width: 1400px;
+}
+
+.contenido-2_h2,
+.contenido-2_p {
+    align-items: center;
+    max-width: 1400px;
+    padding-bottom: 30px;
+}
