@@ -33,14 +33,14 @@
 }
 
 .contenido-2 {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     padding: 30px;
-    max-width: 1400px;
 }
 
 .contenido-2_h2,
 .contenido-2_p {
     align-items: center;
-    max-width: 1400px;
     padding-bottom: 30px;
 }
