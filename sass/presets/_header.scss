@@ -23,13 +23,15 @@
 #navBar__Logo {
     display: flex;
     align-items: center;
+    padding-left: 10px;
 
 }
 
 #navBar__Logo p {
-    padding-left: 20px;
-    font-size: 20px;
+    padding-left: 10px;
+    font-size: 30px;
     font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #menu {
@@ -56,3 +58,7 @@ li {
     display: inline-block;
     padding: 5px;
 }
+li:hover{
+    background-color: rgb(250, 219, 124);
+}
+

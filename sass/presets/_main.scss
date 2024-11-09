@@ -17,6 +17,7 @@ a {
 .hebras__h1 {
     text-align: center;
     background-color: rgb(233, 170, 241);
+    padding: 20px;
 }
 
 .container text-center {
@@ -42,6 +43,7 @@ a {
 .hebrasVerano__h1 {
     text-align: center;
     background-color: rgb(166, 238, 214);
+    padding: 20px;
 }
 
 .algodonRustico__h2,
@@ -56,6 +58,7 @@ a {
 .accesorios__h1 {
     text-align: center;
     background-color: rgb(195, 143, 245);
+    padding: 20px;
 }
 
 .crochet__h2,
@@ -108,7 +111,9 @@ a {
     text-align: center;
 }
 
-.card-img-top-1, .card-img-top-2 , .card-img-top-3{
+.card-img-top-1,
+.card-img-top-2,
+.card-img-top-3 {
     padding: 10px;
     height: 450px;
     width: auto;
@@ -122,3 +127,4 @@ a {
     padding: 20px;
 }
 
+/*cards transformation*/

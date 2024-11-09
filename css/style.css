@@ -32,12 +32,14 @@
 #navBar__Logo {
   display: flex;
   align-items: center;
+  padding-left: 10px;
 }
 
 #navBar__Logo p {
-  padding-left: 20px;
-  font-size: 20px;
+  padding-left: 10px;
+  font-size: 30px;
   font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 #menu {
@@ -62,6 +64,10 @@ li {
   padding: 5px;
 }
 
+li:hover {
+  background-color: rgb(250, 219, 124);
+}
+
 /*BODY-MAIN*/
 a {
   text-decoration: none;
@@ -77,6 +83,7 @@ a {
 .hebras__h1 {
   text-align: center;
   background-color: rgb(233, 170, 241);
+  padding: 20px;
 }
 
 .container text-center {
@@ -102,6 +109,7 @@ a {
 .hebrasVerano__h1 {
   text-align: center;
   background-color: rgb(166, 238, 214);
+  padding: 20px;
 }
 
 .algodonRustico__h2,
@@ -116,6 +124,7 @@ a {
 .accesorios__h1 {
   text-align: center;
   background-color: rgb(195, 143, 245);
+  padding: 20px;
 }
 
 .crochet__h2,
@@ -223,9 +232,7 @@ XXL: 1920*/
     justify-content: space-between;
   }
 }
-/*No entiendo porqué siendo #main el padre no me modificó a ambas clases de contenido, pero cuando hice el llamado a .contenido-2 tambien se me modificó el .contenido-1.   
-Llegué al objetivo que yo queria pero no se si es adecuado el modo jaja*/
-@media (min-width: 1380px) and (max-width: 1920px) and (orientation: landscape) {
+@media (min-width: 1320px) and (max-width: 1920px) and (orientation: landscape) {
   .contenido-2 {
     display: flex;
     flex-direction: column;

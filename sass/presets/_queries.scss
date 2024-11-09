@@ -20,10 +20,7 @@ XXL: 1920*/
 }
 
 
-/*No entiendo porqué siendo #main el padre no me modificó a ambas clases de contenido, pero cuando hice el llamado a .contenido-2 tambien se me modificó el .contenido-1.   
-Llegué al objetivo que yo queria pero no se si es adecuado el modo jaja*/
-
-@media (min-width: 1380px) and (max-width: 1920px) and (orientation: landscape) {
+@media (min-width: 1320px) and (max-width: 1920px) and (orientation: landscape) {
 
     
     .contenido-2
@@ -96,3 +93,4 @@ Llegué al objetivo que yo queria pero no se si es adecuado el modo jaja*/
         display: block;
     }
 }
+
