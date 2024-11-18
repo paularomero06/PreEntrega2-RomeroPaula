@@ -1,12 +1,17 @@
 /* sections index*/
 .contenido-1 {
     text-align: center;
-}
 
-.contenido-1_h1,
-.contenido-1_h2 {
-    text-align: center;
-    margin: 30px;
+    h1,
+    h2 {
+        text-align: center;
+        margin: 30px;
+    }
+
+    p {
+        max-width: 1200px;
+        padding: 20px; // Sobrescribe el padding de `.peruano`
+    }
 }
 
 .img_box {
@@ -14,33 +19,31 @@
     align-items: center;
     align-content: center;
     justify-content: space-around;
+
+    .peruano {
+        max-width: 400px;
+        max-height: 400px;
+        align-items: center;
+
+        &,
+        ~.contenido-1 p {
+            // Estilos compartidos con `contenido-1 p`
+            max-width: 1200px;
+            padding: 30px;
+        }
+    }
 }
 
-.peruano {
-    max-width: 400px;
-    max-height: 400px;
-    align-items: center;
-}
-
-.peruano,
-.contenido-1_p {
-    max-width: 1200px;
-    padding: 30px;
-}
-
-.contenido-1_p {
-    padding: 20px;
-}
 
 .contenido-2 {
     display: flex;
     justify-content: space-between;
     text-align: center;
     padding: 30px;
-}
 
-.contenido-2_h2,
-.contenido-2_p {
-    align-items: center;
-    padding-bottom: 30px;
+    h2,
+    p {
+        align-items: center;
+        padding-bottom: 30px;
+    }
 }

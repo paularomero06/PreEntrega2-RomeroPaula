@@ -15,44 +15,41 @@
   height: 80px;
   background-color: bisque;
 }
-
-.logo-header {
-  width: 60px;
-  height: 60px;
-}
-
-#navBar {
+#header #navBar {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-#navBar__Logo {
+#header #navBar__Logo {
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
-
-#navBar__Logo p {
+#header #navBar__Logo p {
   padding-left: 10px;
   font-size: 30px;
   font-weight: bold;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.logo-header {
+  width: 60px;
+  height: 60px;
+}
+
 #menu {
   text-align: right;
 }
 
-/* Checkbox oculto */
 #toggle-menu {
+  /* Checkbox oculto */
   display: none;
 }
 
-/* Botón hamburguesa oculto por defecto */
 .hamburger {
+  /* Botón hamburguesa oculto por defecto */
   display: none;
   font-size: 24px;
   color: black;
@@ -63,7 +60,6 @@ li {
   display: inline-block;
   padding: 5px;
 }
-
 li:hover {
   background-color: rgb(250, 219, 124);
 }
@@ -158,6 +154,7 @@ a {
 #form {
   grid-area: form;
   height: 100%;
+  margin: 50px;
 }
 
 .contactForm {
@@ -172,11 +169,17 @@ a {
   text-align: center;
 }
 
-.card-img-top-1, .card-img-top-2, .card-img-top-3 {
-  padding: 10px;
-  height: 450px;
-  width: auto;
-  justify-items: center;
+.card-img-top-1,
+.card-img-top-2,
+.card-img-top-3 {
+  width: 100%; /* Llenar el ancho del contenedor */
+  height: 450px; /* Altura fija */
+  object-fit: contain; /* Escala la imagen para que quepa sin recortarse */
+  padding-bottom: 10px;
+}
+
+.clase__p--1, .clase__p--2, .clase__p--3 {
+  margin: 30px;
 }
 
 .h1__contact--1 {
@@ -194,20 +197,17 @@ a {
   align-items: center;
   justify-content: space-around;
 }
-
-.footer-logo img {
+#footer .footer-logo img {
   width: 50px;
   height: 50px;
 }
-
-.footer-copyright {
+#footer .footer-copyright {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  font: size 15px;
+  font-size: 15px;
 }
-
-.footer-redes i {
+#footer .footer-redes i {
   font-size: 25px;
   margin-left: 5px;
   padding: 5px;
@@ -258,27 +258,32 @@ XXL: 1920*/
   .clase__h2--clase3 {
     text-align: center;
   }
-  .card-img-top-1, .card-img-top-2, .card-img-top-3 {
+  .cardContacto {
+    max-width: 100%;
+  }
+  .card-img-top-1,
+  .card-img-top-2,
+  .card-img-top-3 {
+    max-width: 100%;
+    height: auto;
     padding: 10px;
-    height: 450px;
-    width: auto;
-    justify-items: center;
+    display: block;
+    margin: 0 auto;
   }
   .form {
     width: 95%;
-    justify-content: center;
-    margin: 30px;
   }
 }
 /*NAVBAR QUERY FOR SMALL DEVICES*/
 @media (max-width: 820px) {
   #menu {
-    display: none; /*hides menu*/
+    display: none;
+    /*hides menu*/
     flex-direction: column;
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: rgba(235, 202, 202, 0.5176470588);
+    background-color: #ebcaca;
     width: 100%;
     padding: 10px;
     z-index: 1000;
@@ -294,11 +299,14 @@ XXL: 1920*/
 .contenido-1 {
   text-align: center;
 }
-
-.contenido-1_h1,
-.contenido-1_h2 {
+.contenido-1 h1,
+.contenido-1 h2 {
   text-align: center;
   margin: 30px;
+}
+.contenido-1 p {
+  max-width: 1200px;
+  padding: 20px;
 }
 
 .img_box {
@@ -307,21 +315,15 @@ XXL: 1920*/
   align-content: center;
   justify-content: space-around;
 }
-
-.peruano {
+.img_box .peruano {
   max-width: 400px;
   max-height: 400px;
   align-items: center;
 }
-
-.peruano,
-.contenido-1_p {
+.img_box .peruano,
+.img_box .peruano ~ .contenido-1 p {
   max-width: 1200px;
   padding: 30px;
-}
-
-.contenido-1_p {
-  padding: 20px;
 }
 
 .contenido-2 {
@@ -330,9 +332,8 @@ XXL: 1920*/
   text-align: center;
   padding: 30px;
 }
-
-.contenido-2_h2,
-.contenido-2_p {
+.contenido-2 h2,
+.contenido-2 p {
   align-items: center;
   padding-bottom: 30px;
 }

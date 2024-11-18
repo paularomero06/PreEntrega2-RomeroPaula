@@ -7,24 +7,26 @@
     align-items: center;
     justify-content: space-around;
 
-}
+    .footer-logo {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
 
-.footer-logo img {
-    width: 50px;
-    height: 50px;
-}
+    .footer-copyright {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
 
-.footer-copyright {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font: size 15px;
-    
-}
-
-.footer-redes i {
-    font-size: 25px;
-    margin-left: 5px;
-    padding: 5px;
-    color: black;
+    .footer-redes {
+        i {
+            font-size: 25px;
+            margin-left: 5px;
+            padding: 5px;
+            color: black;
+        }
+    }
 }

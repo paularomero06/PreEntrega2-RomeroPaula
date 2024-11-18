@@ -97,6 +97,7 @@ a {
 #form {
     grid-area: form;
     height: 100%;
+    margin: 50px;
 }
 
 .contactForm {
@@ -111,15 +112,19 @@ a {
     text-align: center;
 }
 
+
 .card-img-top-1,
 .card-img-top-2,
 .card-img-top-3 {
-    padding: 10px;
-    height: 450px;
-    width: auto;
-    justify-items: center;
+    width: 100%;      /* Llenar el ancho del contenedor */
+    height: 450px;    /* Altura fija */
+    object-fit: contain; /* Escala la imagen para que quepa sin recortarse */
+    padding-bottom: 10px;
 }
 
+.clase__p--1, .clase__p--2, .clase__p--3{
+    margin: 30px;
+}
 
 .h1__contact--1 {
     text-align: center;
@@ -127,4 +132,3 @@ a {
     padding: 20px;
 }
 
-/*cards transformation*/
