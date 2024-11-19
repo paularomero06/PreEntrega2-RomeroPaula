@@ -1,5 +1,7 @@
 /*BODY-MAIN*/
 
+
+
 a {
     text-decoration: none;
     color: black;
@@ -18,6 +20,7 @@ a {
     text-align: center;
     background-color: rgb(233, 170, 241);
     padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .container text-center {
@@ -44,6 +47,7 @@ a {
     text-align: center;
     background-color: rgb(166, 238, 214);
     padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .algodonRustico__h2,
@@ -59,6 +63,7 @@ a {
     text-align: center;
     background-color: rgb(195, 143, 245);
     padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .crochet__h2,
@@ -116,13 +121,15 @@ a {
 .card-img-top-1,
 .card-img-top-2,
 .card-img-top-3 {
-    width: 100%;      /* Llenar el ancho del contenedor */
-    height: 450px;    /* Altura fija */
-    object-fit: contain; /* Escala la imagen para que quepa sin recortarse */
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
     padding-bottom: 10px;
 }
 
-.clase__p--1, .clase__p--2, .clase__p--3{
+.clase__p--1,
+.clase__p--2,
+.clase__p--3 {
     margin: 30px;
 }
 
@@ -130,5 +137,9 @@ a {
     text-align: center;
     background-color: rgb(206, 241, 117);
     padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+}

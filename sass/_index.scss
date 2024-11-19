@@ -1,4 +1,11 @@
 /* sections index*/
+
+.patua-one-regular {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .contenido-1 {
     text-align: center;
 
@@ -10,7 +17,7 @@
 
     p {
         max-width: 1200px;
-        padding: 20px; // Sobrescribe el padding de `.peruano`
+        padding: 20px; 
     }
 }
 
@@ -27,7 +34,6 @@
 
         &,
         ~.contenido-1 p {
-            // Estilos compartidos con `contenido-1 p`
             max-width: 1200px;
             padding: 30px;
         }
