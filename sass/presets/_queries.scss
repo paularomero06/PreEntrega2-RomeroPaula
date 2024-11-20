@@ -104,3 +104,12 @@ XXL: 1920*/
         display: block;
     }
 }
+
+@media (max-width: 640px) {
+    .row > .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
