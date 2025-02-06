@@ -6,7 +6,7 @@ if (!localStorage.getItem("inscripciones")) {
 
 async function cargarClases() {
     try {
-        const response = await fetch("/javascript/classData.json");
+        const response = await fetch("javascript/classData.json");
         const clases = await response.json();
         return clases;
     } catch (error) {
