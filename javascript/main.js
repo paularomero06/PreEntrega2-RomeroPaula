@@ -1,9 +1,9 @@
-// Verificar si hay inscripciones previas en localStorage
+
 if (!localStorage.getItem("inscripciones")) {
     localStorage.setItem("inscripciones", JSON.stringify([]));
 }
 
-// Función para cargar clases desde JSON
+
 async function cargarClases() {
     try {
         const response = await fetch("../javascript/clases.json");
@@ -15,7 +15,7 @@ async function cargarClases() {
     }
 }
 
-// Mostrar clases disponibles con animación
+
 document.getElementById("mostrarClases").addEventListener("click", async () => {
     const clasesDisponibles = document.getElementById("clasesDisponibles");
     clasesDisponibles.innerHTML = "<h3 class='animate__animated animate__fadeIn'>Cargando clases...</h3>";
@@ -34,7 +34,7 @@ document.getElementById("mostrarClases").addEventListener("click", async () => {
     });
 });
 
-// Manejar inscripción con SweetAlert y localStorage
+
 async function inscribirse(index) {
     const clases = await cargarClases();
     const claseElegida = clases[index];
@@ -52,7 +52,7 @@ async function inscribirse(index) {
 
 
 
-// Mostrar historial de inscripciones
+// historial 
 document.getElementById("verInscripciones").addEventListener("click", () => {
     const historial = document.getElementById("historialInscripciones");
     let inscripciones = JSON.parse(localStorage.getItem("inscripciones")) || [];

@@ -2,7 +2,7 @@
     { "nombre": "Crochet", "horario": "Lunes 10:00 AM", "profesora": "Alicia" },
     { "nombre": "Tejido Circular", "horario": "Martes 2:00 PM", "profesora": "Sonia" },
     { "nombre": "Crochet", "horario": "Miércoles 4:00 PM", "profesora": "Alicia" },
-    { "nombre": "Tricot", "horario": "Miércoles 10:00 AM", "profesora": "Alicia" },
+    { "nombre": "Tricot", "horario": "Miércoles 10:00 AM", "profesora": "Sonia" },
     { "nombre": "Macramé", "horario": "Jueves 10:00 PM", "profesora": "Alicia" },
     { "nombre": "NUEVO TALLER! Telar", "horario": "Jueves 6:00 PM", "profesora": "Monica" },
     { "nombre": "Tejido Circular", "horario": "Viernes 2:00 PM", "profesora": "Alicia" }
